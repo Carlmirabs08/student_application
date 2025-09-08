@@ -263,7 +263,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="container">
         <div class="header">
             <h1>Student Application Form</h1>
-            <p>Please fill out all required fields to complete your application</p>
+            <p>Please fill out all required fields to complete your applications</p>
         </div>
 
         <form id="studentApplicationForm" class="form-container" method="POST" enctype="multipart/form-data">
@@ -647,4 +647,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </body>
 
 </html>
+
 
