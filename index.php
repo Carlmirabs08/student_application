@@ -64,8 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $newFilename = uniqid() . '.' . $ext;
             $uploadPath = 'Uploads/' . $newFilename;
             if (!is_dir('Uploads')) {
-                mkdir('Uploads', 0755, true);
-            }
+                mkdir('Uploads', 0755, true); }
             if (move_uploaded_file($_FILES['studentPhoto']['tmp_name'], $uploadPath)) {
                 $photoPath = $uploadPath;
             } else {
