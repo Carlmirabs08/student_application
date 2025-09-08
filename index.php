@@ -64,7 +64,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $newFilename = uniqid() . '.' . $ext;
             $uploadPath = 'Uploads/' . $newFilename;
             if (!is_dir('Uploads')) {
-                mkdir('Uploads', 0755, true); }
+                mkdir('Uploads', 0755, true);
+            }
             if (move_uploaded_file($_FILES['studentPhoto']['tmp_name'], $uploadPath)) {
                 $photoPath = $uploadPath;
             } else {
@@ -164,7 +165,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Students Application Form</title>
+    <title>Student Application Form</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -263,7 +264,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="container">
         <div class="header">
             <h1>Student Application Form</h1>
-            <p>Please fill out all required fields to complete your applications</p>
+            <p>Please fill out all required fields to complete your application</p>
         </div>
 
         <form id="studentApplicationForm" class="form-container" method="POST" enctype="multipart/form-data">
@@ -354,6 +355,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <option value="single">Single</option>
                             <option value="married">Married</option>
                             <option value="divorced">Divorced</option>
+                            <option value="separated">Separated</option>
+                            <option value="widowed">Widowed</option>
                         </select>
                     </div>
                 </div>
@@ -647,5 +650,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </body>
 
 </html>
-
 
