@@ -440,7 +440,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <option value="Senior High">Senior High</option>
                             <option value="Junior High">Junior High</option>
                             <option value="Elementary">Elementary</option>
-                            <option value="Kindergarten">Kindergarten</option>   
+                            <option value="Kinder">Kinder</option>   
                         </select>
                         <div class="error-message" id="departmentError">Please select your department</div>
                     </div>
@@ -650,4 +650,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </body>
 
 </html>
+
 
